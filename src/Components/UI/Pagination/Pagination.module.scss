@@ -1,0 +1,146 @@
+@import "../../.././assets/Variables/Variables.scss";
+
+.pagination_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 0px 30px 0px;
+  &_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 140px 0px 140px;
+    input {
+      width: 100%;
+      background-color: none;
+      color: black;
+    }
+  }
+  &_search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+    color: black;
+    justify-content: space-between;
+    input {
+      background: none;
+    }
+  }
+  &_fimls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+  }
+  &_page {
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+  }
+  &_fiml {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &_hoverbox {
+    width: 180px;
+    height: 0%;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(16, 16, 16, 0.85);
+    position: absolute;
+    bottom: 500px;
+    bottom: 30px;
+    border-radius: 20px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    max-width: 180px;
+    max-height: 300px;
+    opacity: 0;
+    cursor: pointer;
+    h1 {
+      position: relative;
+      color: white;
+      font-size: 16px;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+      visibility: hidden;
+    }
+    h2 {
+      position: relative;
+      color: white;
+      font-size: 16px;
+      visibility: hidden;
+      transition: opacity 0.6s ease-in-out;
+    }
+    h3 {
+      position: relative;
+      color: white;
+      font-size: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.6s ease-in-out;
+    }
+  }
+}
+.pagination_container_fiml:hover {
+  .pagination_container_hoverbox {
+    height: 82%;
+    opacity: 1;
+    visibility: visible;
+    h1 {
+      opacity: 1;
+      visibility: visible;
+      overflow: hidden;
+    }
+    h2 {
+      opacity: 1;
+      visibility: visible;
+      overflow: hidden;
+    }
+    h3 {
+      opacity: 1;
+      visibility: visible;
+      overflow: hidden;
+    }
+  }
+}
+.page_btn {
+  border: none;
+  background: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+.film_name {
+  text-decoration: none;
+  color: black;
+}
+.film_name {
+  padding-top: 20px;
+}
+
+// admin
+.btn_admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__addMovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    gap: 12px;
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}

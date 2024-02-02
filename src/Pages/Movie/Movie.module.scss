@@ -1,0 +1,90 @@
+@import "../.././assets/Variables/Variables.scss";
+.Movie_container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  padding-top: 25px;
+  &_main {
+    flex: 0 1 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &_saitbar {
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+    align-items: center;
+    // overflow: scroll;
+    max-height: 540px;
+    overflow: hidden;
+  }
+  &_cards {
+    h1 {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  
+}
+
+// MAIN
+.main {
+  &_title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-right: 60px;
+  }
+  &_dictionaries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_video{
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+  &_vocabulary{
+    padding-right: 60px;
+    padding-left: 20px;
+  }
+}
+
+.Movie_link {
+  position: relative;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color:$Light_gray;
+  text-decoration: none;
+  left: 35%;
+}
+
+// admin
+.btn_admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__addMovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    gap: 12px;
+    cursor: pointer;
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../assets/Variables/Variables.scss';
+.saitbarlist__item{
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 3px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+.saitbarlist__item:hover{
+    color:$blue_2;
+}

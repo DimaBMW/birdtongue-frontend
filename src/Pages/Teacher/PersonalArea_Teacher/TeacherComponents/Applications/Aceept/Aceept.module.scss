@@ -1,0 +1,171 @@
+@import "../../../../../../assets/Variables/Variables.scss";
+.Reject_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(16, 16, 16, 0.54);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+.Reject_container.active {
+  opacity: 1;
+  visibility: visible;
+}
+.Reject_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 25px;
+  min-width: 490px;
+  h1 {
+    font-family: Outfit;
+    font-size: 24px;
+    color: $black;
+    font-weight: 400;
+  }
+  p {
+    font-family: Outfit;
+    font-size: 18px;
+    color: $black;
+    font-weight: 300;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+.btn_opacity {
+  background: none;
+  border-radius: 35px;
+  border: 1px solid $blue_2;
+  cursor: pointer;
+  font-family: Outfit;
+  font-size: 18px;
+  color: $black;
+  min-width: 120px;
+  padding: 10px 0px;
+  font-weight: 300;
+}
+.btn_full {
+  background: $backgroundGradient;
+  border-radius: 35px;
+  border: 1px solid $blue_2;
+  cursor: pointer;
+  font-family: Outfit;
+  font-size: 18px;
+  color: white;
+  min-width: 120px;
+  padding: 10px 0px;
+  font-weight: 300;
+}
+
+.Accept_radio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__btnMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+    gap: 15px;
+    color:black;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: none;
+  }
+  &__bluebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $blue_2;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all .25s ease;
+  }
+}
+.Accept_radio__bluebox.active{
+  opacity: 1;
+  visibility: visible;
+}
+// =============
+// Creating Class
+// =============
+.CreatindClass{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+  h1{
+    font-family: Outfit;
+    font-size: 24px;
+    color: $black;
+    font-weight: 400;
+  }
+}
+// input
+.form_inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  h2 {
+    font-family: Outfit;
+    font-size: 16px;
+    color:$Caption-gray;
+    font-weight: 300;
+  }
+}
+.input_form_errors{
+
+}
+.input_form{
+    background:none;
+    border:1px solid $Gray-Border;
+    color:black;
+    min-width: 200px;
+    border-radius:10px;
+    padding: 10px 20px;
+}
+.input_form_errors{
+    background:none;
+    border:1px solid $Error;
+    color:black;
+    min-width: 200px;
+    border-radius:10px;
+}
+.errors{
+    color:$Error;
+}

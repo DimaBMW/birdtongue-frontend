@@ -1,0 +1,57 @@
+.Materials_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  gap: 25px;
+  padding-top: 35px;
+  &__arcticlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    h2 {
+      font-family: Outfit;
+      font-size: 20px;
+      font-weight: 400;
+      color: black;
+    }
+    p {
+      text-overflow: ellipsis;
+      font-family: Outfit;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+    span {
+      font-family: Outfit;
+      font-size: 14px;
+      color: #b1b1b1;
+      font-weight: 300;
+    }
+  }
+  &__testbox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 015px;
+    grid-row-gap: 30px;
+  }
+}
+.title {
+  font-family: Outfit;
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+}
+.titlebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-family: Outfit;
+    font-size: 14px;
+    color: #b1b1b1;
+    font-weight: 300;
+  }
+}

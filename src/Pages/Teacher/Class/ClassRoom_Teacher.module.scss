@@ -1,0 +1,166 @@
+// импорт переменных
+@import "../../../assets/Variables/Variables.scss";
+// основные переменные
+.Class {
+  font-family: Outfit;
+  color: $black;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &__Menu {
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__Tests {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 45px;
+      grid-row-gap: 45px;
+    }
+    &__ProgressBar {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      border-radius: 40px;
+      padding: 30px 30px;
+      box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.137);
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 50px;
+    }
+    &__btnAddTest {
+      display: flex;
+      font-family: Outfit;
+      padding: 28px 80px;
+      cursor: pointer;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      align-items: center;
+      color:black;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      background: none;
+      max-width: 280px;
+      max-height: 80px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+    }
+  }
+}
+// меню
+.Menu {
+  &_title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &_Option {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    h2 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// progress
+.progress {
+  &_label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+    h2 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  &_bar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid $blue_2;
+    border-radius: 15px;
+    &__fill {
+      width: 0%;
+      height: 100%;
+      background: $backgroundGradient;
+      border-radius: 13px;
+      transition: all 0.25s ease;
+    }
+  }
+}
+// practicants
+.Practicants {
+  display: flex;
+  align-items: center;
+  // gap: 10px;
+  &_logo {
+    display: flex;
+    align-items: center;
+  }
+}
+.practicantbox {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+.koll {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: #eee;
+  position: relative;
+  left: -45px;
+}
+.Practicants_add__btn {
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -35px;
+}
+
+.btnbox{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}

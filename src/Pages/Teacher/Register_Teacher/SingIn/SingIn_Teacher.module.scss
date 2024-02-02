@@ -1,0 +1,177 @@
+@import "../../../../assets/Variables/Variables.scss";
+.login {
+  &_link {
+    text-align: center;
+    border-top: 1px solid #10101012;
+    padding-top: 35px;
+    h2 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Light_gray-2;
+    }
+    &_LinkTo {
+      color: $blue_2;
+      text-decoration: none;
+    }
+  }
+}
+.singin_container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // position: relative;
+  padding: 20px;
+  &_formcontainer {
+    background-color: $clearWhite;
+    box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+    border-radius: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+}
+.form {
+  display: flex;
+
+  flex-direction: column;
+  gap: 40px;
+  &_btn {
+    background: none;
+    border: none;
+  }
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+  &_inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Light_gray-2;
+    }
+  }
+  &_buttons {
+    text-align: center;
+  }
+}
+.input_form{
+  background: none;
+  border: 1px solid $Gray-Border;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: $black;
+  transition: all .25s ease;
+  &_errors{
+    background: none;
+    border: 1px solid $Error;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $black;
+  }
+}
+.errors{
+  color: $Error;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+// loader
+.loaderRegister{
+  &_container{
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 100;
+    background: rgba(16, 16, 16, 0.54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_box{
+    min-width: 240px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+    h1 {
+      font-family: Outfit;
+      font-size: 32px;
+      font-weight: 400;
+      color: $black;
+      text-align: center;
+    }
+  }
+}
+.loaderRegister_loader{
+  animation: animate 1.5s linear infinite;
+  clip: rect(0, 80px, 80px, 40px); 
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+}
+.loaderRegister_loader::after{
+  animation: animate2 1.5s ease-in-out infinite;
+  clip: rect(0, 80px, 80px, 40px);
+  content:'';
+  border-radius: 50%; 
+  height: 80px;
+  width: 80px;
+  position: absolute; 
+}
+@keyframes animate {
+  0% { 
+    transform: rotate(0deg)
+  }
+  100% { 
+    transform: rotate(220deg)
+  }
+}
+@keyframes animate2 {
+  0% {
+    box-shadow: inset #56A6F9 0 0 0 17px;
+    transform: rotate(-140deg);
+  }
+  50% {
+    box-shadow: inset #56A6F9 0 0 0 2px;
+  }
+  100% {
+    box-shadow: inset #56A6F9 0 0 0 17px;
+    transform: rotate(140deg);
+  }
+}
+.loaderRegister_container.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.input_form:focus{
+  border: 1.5px solid $blue_2;
+}

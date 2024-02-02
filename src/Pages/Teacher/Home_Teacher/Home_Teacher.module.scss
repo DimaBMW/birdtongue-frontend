@@ -1,0 +1,123 @@
+// импорт переменных
+@import "../../../assets/Variables/Variables.scss";
+// основные стили
+.Home {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 70px;
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__aboutme {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      h1 {
+        font-family: Outfit;
+        font-size: 42px;
+        color:$black;
+        text-align: center;
+        font-weight: 400;
+      }
+    }
+    &__quetions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+    }
+  }
+}
+
+// title
+.Title {
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex: 0 1 50%;
+    h1 {
+      font-family: Outfit;
+      font-size: 50px;
+      color: black;
+      font-weight: 400;
+    }
+    p {
+      font-family: Outfit;
+      font-size: 18px;
+      color: black;
+      font-weight: 300;
+    }
+    span {
+      font-family: Outfit;
+      font-size: 50px;
+      color: $Sand;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+  &_link {
+    flex: 0 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    &__LInk1 {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 15px 60px;
+      color: $black;
+      font-family: Outfit;
+      font-size: 18px;
+      border-radius: 16px;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+      border: 1px solid $blue_2;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      min-width: 150px;
+      text-decoration: none;
+    }
+    &__LInk2 {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 15px 60px;
+      color: $white;
+      font-family: Outfit;
+      font-size: 18px;
+      border-radius: 35px;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+      background: linear-gradient(126deg, #71c1f4 -21%, #3161bc 77.48%);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      min-width: 150px;
+      text-decoration: none;
+    }
+  }
+}
+.Rectangle_box{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.Quetions_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+}

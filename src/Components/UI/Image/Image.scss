@@ -1,0 +1,293 @@
+.image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+.user__img {
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+.usercard__img {
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+}
+.search__img {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+  }
+}
+.filmcard__img {
+  width: 200px;
+  img {
+    width: 210px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+.layoutmobile__img {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.layoutmobile__img.active {
+  img {
+    transform: rotateZ(90deg);
+  }
+}
+.persone__areaimgon {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.persone__areaimgoff {
+  visibility: hidden;
+  opacity: 0;
+  padding: absolute;
+}
+.img-popularcard {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+
+.button__icon {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+// video player
+.play-pause__videoplayer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.volume__videoplayer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(90deg);
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+// class
+.img-class {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(90deg);
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+// practicants logo
+.practicant__img{
+  width: auto;
+  display: flex;
+  padding: 2px;
+  background-color:aliceblue;
+  border-radius:50%;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius:50%;
+    transition: all 0.5s ease;
+  }
+}
+// admin
+.button-admin__icon {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.selector-admin__icon {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+  }
+}
+.selector-admin__icon.active {
+  img {
+    transform: rotate(180deg);
+  }
+}
+.practicant-plus__img{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+  }
+}
+
+.rectangle__img{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+  }
+}
+
+
+
+
+.homearrow__img {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.homearrow__img.active {
+  img {
+    transform: rotateZ(180deg);
+  }
+}
+
+.chat-send__img{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+}
+.teacherlogo__img{
+    width: auto;
+    display: flex;
+    padding: 2px;
+    background-color:aliceblue;
+    border-radius:50%;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius:50%;
+      transition: all 0.5s ease;
+    }
+}
+.arcticles-card__img{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 280px;
+    height: 170px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+  }
+}
+// register complete
+.register__complete{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+  }
+}

@@ -1,0 +1,133 @@
+@import "../../../../assets/Variables/Variables.scss";
+.login {
+  &_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    border-top: 1px solid #10101012;
+    padding-top: 35px;
+    h2 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Light_gray-2;
+    }
+    &_LinkTo {
+      color: $blue_2;
+      text-decoration: none;
+    }
+  }
+}
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 140px 50px 50px 50px; 
+  &_formcontainer {
+    background-color: $clearWhite;
+    box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+    border-radius: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+}
+.form {
+  display: flex;
+
+  flex-direction: column;
+  gap: 40px;
+  &_btn {
+    background: none;
+    border: none;
+  }
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+  &_inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Light_gray-2;
+    }
+  }
+  &_buttons {
+    text-align: center;
+  }
+}
+.input_form{
+  background: none;
+  border: 1px solid $Gray-Border;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all .25s ease;
+  color: $black;
+  &_errors{
+    background: none;
+    border: 1px solid $Error;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $black;
+  }
+}
+.errors{
+  color: $Error;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.login_ForgotBtn{
+  background:none;
+  border:none;
+  cursor: pointer;
+}
+.inputboxIcons{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;;
+  position: relative;
+  input{
+    background:none;
+    width: 100%;
+    color:black;
+  }
+  &_errors {
+    border: 1px solid $Error;
+    color: $Error;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}
+.inputboxIcons:focus{
+  border: 1px solid $blue_2;
+}
+.userform_btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+.input_form:focus{
+  border: 1.5px solid $blue_2;
+}

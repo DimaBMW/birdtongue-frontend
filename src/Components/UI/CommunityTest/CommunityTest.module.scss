@@ -1,0 +1,62 @@
+// import переменных
+@import "../../../assets/Variables/Variables.scss";
+// основные стили
+.CommunityTests {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 45px 60px;
+      border-radius: 15px;
+      min-height: 120px;
+      text-align: center;
+      box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.137);
+      h1 {
+        font-family: Outfit;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        color: $Sand;
+        text-decoration: none;
+      }
+      h2 {
+        font-family: Outfit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        color: $blue_2;
+        text-decoration: none;
+      }
+    }
+    &__footer {
+      text-align: left;
+      margin-top: 20px;
+      h1 {
+        font-family: Outfit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+        list-style: none;
+      }
+      h2 {
+        font-family: Outfit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        color:$Light_gray-2;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.CommunityTests_link{
+  text-decoration: none;
+}

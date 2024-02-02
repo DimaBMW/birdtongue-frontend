@@ -1,0 +1,151 @@
+@import "../../../assets/Variables/Variables.scss";
+
+.PersonalArea_container {
+  padding: 50px 70px 60px 70px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 40px;
+  &_title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+  }
+  &_main {
+    display: flex;
+    gap: 40px;
+  }
+}
+.UserCard {
+  flex: 0 1 20%;
+  display: flex;
+  padding: 40px 35px;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 300px;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+  &_prewie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    h1 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    &_title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h2 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        color: $Light_gray;
+      }
+    }
+    &_titleEdit {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Outfit;
+        font-size: 18px;
+        color:$Light_gray;
+        font-weight: 300;
+        background:none;
+        border:none;
+        cursor: pointer;
+      }
+    }
+  }
+  &_dataReg {
+    text-align: center;
+    background-color: $Gray-tags-2;
+    border-radius: 10px;
+    padding: 8px 18px;
+    h1 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+}
+.UserInfo {
+  flex: 0 1 80%;
+  background-color: $white;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px 40px 60px 40px;
+  box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    &__btnbox {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    &__btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: $Light_gray;
+      font-weight: 300;
+      padding-bottom: 5px;
+    }
+    &__btnActive {
+      color: $black !important;
+      border-bottom: 1px solid $blue_2;
+    }
+    &__logout{
+      display: flex;
+      align-items:center;
+      justify-content: end;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .25s ease;
+      button{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Outfit;
+        font-size: 18px;
+        color:$black;
+        font-weight: 300;
+        background:none;
+        border:none;
+        cursor: pointer;
+        padding: 10px 30px 10px 20px;
+        border-radius:10px;
+        box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+      }
+    }
+  }
+  &_from {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.UserInfo_title__logout.activelogout{
+  opacity: 1;
+  visibility: visible;
+  transition: all .25s ease;
+}

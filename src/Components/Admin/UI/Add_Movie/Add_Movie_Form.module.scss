@@ -1,0 +1,232 @@
+@import "../../../.././assets/Variables/Variables.scss";
+
+.form_container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(16, 16, 16, 0.54);
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form_container_active {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(16, 16, 16, 0.54);
+  right: 0;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// форма
+
+.form {
+  min-width: 840px;
+  max-width: 840px;
+  max-height: 740px;
+  overflow: hidden;
+  z-index: 100 ;
+  background-color: $white;
+  border-radius: 16px;
+  position: relative;
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    position: relative;
+    h1 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    &_icon {
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      button {
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+      }
+    }
+  }
+  &_buttons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 100px;
+    bottom: 0;
+  }
+  &_main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0px 40px;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    &_linktoMovieFile {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      &_inputbox {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 55%;
+        h2 {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          color: $Caption-gray;
+        }
+      }
+      &_btnaddfile {
+        display: flex;
+        align-items: center;
+        h1 {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          color: $Light_gray;
+        }
+      }
+    }
+    &_inputbox {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 95%;
+      h2 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        color: $Caption-gray;
+      }
+    }
+    &_selectsbox {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      &__rows1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+      }
+      &__rows2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+    &_castBox {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color:$black;
+      }
+      &__selectbox{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+    }
+  }
+}
+.form_main_selectsbox_rows2_fileSubptatile {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.formbtnsubtitles {
+  padding: 0px 250px;
+}
+.input_adminform {
+  padding: 10px 20px;
+  background-color: $white;
+  border: 1px solid $Gray-Border;
+  border-radius: 7px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: $black;
+  width: 100%;
+}
+.btn_adminForm {
+  background: none;
+  display: flex;
+  padding: 12px 60px 12px 60px;
+  border-radius: 100px;
+  min-width: 160px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: $black;
+  cursor: pointer;
+  border: 1px solid #6bbbee;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.btn_adminForm:hover {
+  box-shadow: 0px 0px 20px 2px rgba(56, 56, 56, 0.363);
+}
+textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+.form_main_linktoMovieFile_btnaddfile {
+  max-width: 250px;
+}
+.filebtnSubtitle {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  h1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: $Caption-gray;
+  }
+}
+.h1_select {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form_main::-webkit-scrollbar {
+  width: 6px; /* ширина для вертикального скролла */
+  height: 5px; /* высота для горизонтального скролла */
+  background-color: #EBEBEB;
+}
+.form_main::-webkit-scrollbar-thumb {
+  background-color: #D1D1D1;
+  height: 5px;
+  width: 1px;
+  border-radius:10px
+}

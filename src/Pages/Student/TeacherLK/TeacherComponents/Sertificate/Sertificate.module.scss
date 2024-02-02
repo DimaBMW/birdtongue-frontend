@@ -1,0 +1,41 @@
+@import "../../../../../assets/Variables/Variables.scss";
+
+.Sertificate {
+  &_part1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    h1 {
+      font-family: Outfit;
+      font-size: 18px;
+      color: black;
+      font-weight: 300;
+    }
+    h2 {
+      font-family: Outfit;
+      font-size: 12px;
+      color:$Light_gray;
+      font-weight: 300;
+    }
+  }
+}
+.btnDelete {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.btnOpen{
+    padding: 10px;
+    border-radius:10px;
+    background: rgba(86, 166, 249, 0.2);
+}

@@ -1,0 +1,152 @@
+@import "../../../assets/Variables/Variables.scss";
+
+.vocabulary_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $Sand;
+    border-radius: 16px 16px 0px 0px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+}
+.title {
+  &_part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 50%;
+    &__btnbox{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+    }
+    &__btn1 {
+      background: none;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      color: $black;
+      cursor: pointer;
+    }
+    &__btn1Active{
+        background: none;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        cursor: pointer;
+        border-bottom: 1px solid $black;
+    }
+    &__btn2 {
+      background: none;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      color: $black;
+      cursor: pointer;
+    }
+    &__btn2Active{
+        background: none;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        cursor: pointer;
+        border-bottom: 1px solid $black;
+    }
+  }
+  &_part2{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex: 0 1 35%;
+    &__checkbox{
+        display: flex;
+        align-items:center;
+        gap: 8px;
+        input{
+            background:none;
+        }
+    }
+  }
+}
+  .back{
+    &_repost{
+        display: flex;
+        align-items:center;
+        gap: 8px;
+    }
+    &_views{
+        display: flex;
+        align-items:center;
+        gap: 8px;
+    }
+  }
+
+
+//   checkbox
+.custom_checkbox {
+    z-index: -1;
+    opacity: 0;
+  }
+.custom_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #000000;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom_checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+  /* стили при наведении курсора на checkbox */
+// .custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
+//     border-color: #b3d7ff;
+//   }
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+//   .custom_checkbox:not(:disabled):active+label::before {
+//     background-color: #b3d7ff;
+//     border-color: #b3d7ff;
+//   }
+  /* стили для чекбокса, находящегося в фокусе */
+//   .custom_checkbox:focus+label::before {
+//     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//   }
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+//   .custom_checkbox:focus:not(:checked)+label::before {
+//     border-color: #80bdff;
+//   }
+  /* стили для чекбокса, находящегося в состоянии disabled */
+//   .custom_checkbox:disabled+label::before {
+//     background-color: #e9ecef;
+//   }

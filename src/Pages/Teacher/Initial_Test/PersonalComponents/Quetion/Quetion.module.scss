@@ -1,0 +1,68 @@
+// импорт переменных
+@import "../../../../../assets/Variables/Variables.scss";
+// основные стили
+.Quetion {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background: $white;
+    border-radius: 16px;
+    width: 92%;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+    &__title {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 8px;
+      font-family: Outfit;
+      font-size: 18px;
+      color: $black;
+      font-weight: 400;
+    }
+  }
+}
+.InputField {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  &_input {
+    background: none;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 400;
+    color: $black;
+    border: 1px solid $Gray-Border;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  &_inputbtn {
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: $black;
+    border: 1px solid $Gray-Border;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+.input {
+  background: none;
+  position: relative;
+  pointer-events: none;
+}
+.ChoosingAnswer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:start;
+  gap: 20px;
+  transition: all .25s ease;
+}
+.InputField_inputbtn.active{
+  border: 2px solid $Gray-Border;
+  transition: all .25s ease;
+}

@@ -1,0 +1,55 @@
+.HomeRegUser{
+    &_container{
+        display: flex;
+        &_saitbar{
+            padding: 20px 25px 0px 0px;
+            flex: 0 1 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        &_main{
+            padding-left: 25px;
+            flex: 0 1 80%;
+        }
+    }
+}
+.saitbar{
+    &_list{
+    padding: 25px;
+    background-color: #FFF;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 0px 0px 10px 2px rgba(87, 87, 87, 0.13);
+    }
+    &_title{
+        font-weight: 400;
+    }
+    &_li{
+        text-decoration: none;
+        list-style-type: none;
+        padding-top: 3px;
+    }
+    &_link{
+        text-decoration: none;
+        color:black;
+        font-size: 18px;
+        &_gradient{
+            text-decoration: none;
+            color:linear-gradient(126deg, #71C1F4 -21%, #3161BC 77.48%);
+        }
+    }
+}
+
+.main{
+    &_titleBox{
+        text-align: center;
+        padding: 15px 0px 0px 0px;
+        h1{
+            font-size: 40px;
+            font-weight: 400;
+        }
+    }
+}

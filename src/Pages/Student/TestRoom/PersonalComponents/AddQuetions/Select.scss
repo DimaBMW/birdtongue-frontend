@@ -1,0 +1,63 @@
+.select {
+  &__control {
+    background: none !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: black !important;
+    border: 1px solid #E0E0E0 !important;
+    border-radius:10px !important;
+    padding: 5px 5px;
+    transition: all .25s ease;
+    min-width: 300px;
+    max-width:300px;
+    &focus{
+        border: 1px solid #56A6F9 !important;
+    }
+  }
+  &__value-container{
+    cursor: text !important;
+  }
+  &__indicator-separator{
+    display: none !important;
+  }
+  &__indicator{
+    cursor: pointer;
+  }
+  &__menu{
+    background:white !important;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.11) !important;
+    border-radius:7px !important;
+    border:none !important;
+    animation: scaleIn 0.4s forwards;
+  }
+  &__option{
+    cursor: pointer !important;
+    transition: all .25s ease;
+    background:none !important;
+    color:black;
+    &:hover{
+        background:white !important;
+        color:#56A6F9 !important;
+    }
+    &--is-focused{
+        color:#000000 !important;
+        opacity: 1 !important;
+    }
+    &--is-selected{
+        color:#56A6F9 !important;
+    }
+  }
+}
+@keyframes scaleIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

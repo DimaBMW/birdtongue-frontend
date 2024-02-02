@@ -1,0 +1,117 @@
+// импорт переменных
+@import "../../../assets/Variables/Variables.scss";
+// основные стиили
+.OurTeacher {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    &__teachers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2);
+      grid-column-gap: 36px;
+      grid-row-gap: 36px;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      padding-top: 20px;
+      h1 {
+        font-family: Outfit;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+      }
+    }
+    &__search {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 55px;
+    }
+    &__community {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 55px;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  }
+}
+// Search
+.Search {
+  &_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &_search {
+    width: 50%;
+    &__inputContainer {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 15px 20px 15px 20px;
+      border-radius: 100px;
+      border: 1px solid #ddd;
+      color: black;
+      justify-content: space-between;
+      input {
+        background: none;
+        color: $black;
+        width: 100%;
+      }
+    }
+  }
+  &_classrooms {
+    display: grid;
+    align-items:start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+  }
+}
+// Community
+.community {
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: Outfit;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      color: $black;
+    }
+  }
+  &_tests {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+  }
+}
+.h1_article{
+  font-family: Outfit;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+}

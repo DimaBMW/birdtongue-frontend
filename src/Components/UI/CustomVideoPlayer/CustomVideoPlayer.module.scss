@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700&family=Urbanist:wght@100;300;400;500;600&display=swap");
+// ипорт переменных для стилей
+@import "../../../assets/Variables/Variables.scss";
+// основные стили
+.customVideoPlayer {
+  max-width: 1000px;
+  position: relative;
+  z-index: 1000;
+  &_VideoPlayer {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  &_Controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    width: 94%;
+    bottom: 7%;
+    left: 2.5%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    &__Play {
+      background: none;
+      cursor: pointer;
+    }
+  }
+  &_ProgressBarContainer {
+    position: absolute;
+    bottom: 6%;
+    width: 94%;
+    left: 2.8%;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transition: all 0.25s ease;
+    z-index: 10;
+  }
+  &_Volume {
+    display: flex;
+    top: -68px;
+    right: 60px;
+    position: relative;
+    align-items: center;
+    transform: rotate(-90deg);
+    &_btn {
+      background: none;
+      &__input {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease;
+      }
+    }
+  }
+  &_Forwards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    // top: -68px;
+    right: 120px;
+    position: relative;
+    align-items: center;
+  }
+  &_FullScrenn {
+    position: absolute;
+    right: 0;
+    &__btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &_OffSubtitles {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    right: 120px;
+    position: relative;
+    align-items: center;
+  }
+  // субтитры
+  &_SubtitlesBox {
+    position: absolute;
+    bottom: 8%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 0;
+    justify-content: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    transition: all 0.25s ease;
+  }
+}
+.subtitletestbox {
+  width: 400px;
+  height: auto;
+  min-height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10000;
+  color: black;
+  border: 1px solid black;
+}
+
+// progress bar
+.ProgressBar {
+  width: 100%;
+  height: 10px;
+  background-color: $white;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.5s ease;
+  &_fill {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+  }
+  &_timeIndicator {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    // opacity: 0;
+    // visibility: visible;
+    position: absolute;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    right: 50px;
+    bottom: 24px;
+  }
+}
+.scrubbtn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -5px;
+  transition: all 0.5s ease;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+// hover
+.customVideoPlayer:hover {
+  .customVideoPlayer_Controls {
+    opacity: 1;
+    visibility: visible;
+  }
+  .customVideoPlayer_ProgressBarContainer {
+    opacity: 1;
+    visibility: visible;
+  }
+  .customVideoPlayer_SubtitlesBox {
+    top: 60%;
+    position: absolute;
+    transition: all 0.25s ease;
+  }
+}
+.customVideoPlayer_Volume:hover {
+  .customVideoPlayer_Volume_btn__input {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// СУБТИТРЫ
+.subtitles {
+  // текущие
+  &_current {
+    color: #fff;
+    font-weight: 300;
+  }
+  // следующие
+  &_next {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}
+// выключение субтитров
+.offsubtitles {
+  opacity: 0;
+}
+

@@ -1,0 +1,135 @@
+@import "../../../assets/Variables/Variables.scss";
+
+.PersonalArea_container {
+  padding: 50px 70px 60px 70px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 40px;
+  &_title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+  }
+  &_main {
+    display: flex;
+    gap: 40px;
+  }
+}
+.UserCard {
+  flex: 0 1 20%;
+  display: flex;
+  padding: 40px 35px;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 300px;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+  &_prewie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    h1 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    &_title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h2 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        color: $Light_gray;
+      }
+    }
+    &_titleEdit {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Outfit;
+        font-size: 18px;
+        color: $Light_gray;
+        font-weight: 300;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  &_dataReg {
+    text-align: center;
+    background-color: $Gray-tags-2;
+    border-radius: 10px;
+    padding: 8px 18px;
+    h1 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+}
+.UserInfo {
+  flex: 0 1 80%;
+  background-color: $white;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 35px 40px 60px 40px;
+  box-shadow: 0px 0px 15px 2px rgba(77, 77, 77, 0.171);
+  h1 {
+    text-align: left;
+    font-family: Outfit;
+    font-size: 28px;
+    color:black;
+    font-weight: 400;
+  }
+  &_Languages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    &__box{
+      display: flex;
+      align-items:center;
+      justify-content: start;
+      gap: 10px;
+    }
+  }
+  &_Certificates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    &__SertificateBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+.languages_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 11px;
+  background: rgba(86, 166, 249, 0.35);
+  border-radius: 5px;
+  font-family: Outfit;
+  font-size: 14px;
+  color:black;
+  font-weight: 300;
+}

@@ -1,0 +1,156 @@
+@import "../../../../../../assets/Variables/Variables.scss";
+.userform {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  transition: all 0.5s ease;
+  &_data {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_part1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+    &_part2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  &_inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h1 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Caption-gray;
+    }
+  }
+  &_input {
+    padding: 10px 20px;
+    border: 1px solid $Gray-Border;
+    border-radius: 10px;
+    background: none;
+    transition: all 0.5s ease;
+    &_errors {
+      border: 1px solid $Error;
+      color: $Error;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+  &_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  &_button {
+    background: none;
+  }
+  &_btnbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    &_active {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  &_btnbox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    &_active {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+    }
+  }
+}
+.userform_input:focus {
+  border: 1px solid $blue_2;
+}
+.userform_input_errors:focus {
+  border: 1px solid $Error;
+}
+.userform_inputboxConfim {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  &_active {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    h1 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      color: $Caption-gray;
+    }
+  }
+}
+.userform_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.errors{
+  color: $Error;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.inputboxIcons{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid $Gray-Border;
+  border-radius:10px;
+  position: relative;
+  input{
+    background:none;
+    width: 100%;
+    color:black;
+  }
+  &_errors {
+    border: 1px solid $Error;
+    color: $Error;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}
+.inputboxIcons:focus{
+  border: 1px solid $blue_2;
+}
+.userform_input_active{
+  padding: 10px 20px;
+  border: 1px solid $Gray-Border;
+  border-radius: 10px;
+  background: none;
+  transition: all 0.5s ease;
+  color:$black;
+  &_errors {
+    border: 1px solid $Error;
+  }
+}
