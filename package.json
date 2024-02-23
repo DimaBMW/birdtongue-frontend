@@ -36,7 +36,7 @@
     "@tiptap/starter-kit": "^2.1.16",
     "@types/react-redux": "^7.1.33",
     "@types/video.js": "^7.3.56",
-    "@vidstack/react": "^1.5.0",
+    "@vidstack/react": "^1.10.3",
     "axios": "^1.6.2",
     "cors": "^2.8.5",
     "emoji-picker-react": "^4.5.16",
