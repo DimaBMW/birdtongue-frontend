@@ -31,7 +31,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.13",
     "@mui/styled-engine-sc": "^6.0.0-alpha.1",
-    "@tiptap/pm": "^2.1.16",
+    "@tiptap/pm": "^2.11.5",
     "@tiptap/react": "^2.0.3",
     "@tiptap/starter-kit": "^2.1.16",
     "@types/react-redux": "^7.1.33",
